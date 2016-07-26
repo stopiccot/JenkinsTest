@@ -9,5 +9,5 @@ node {
     sh "/Applications/Xamarin\\ Studio.app/Contents/MacOS/mdtool build -t:Build -c:Debug\\|iPhoneSimulator -p:JenkinsTest.iOS JenkinsTest.sln"
 
     stage 'Android Build'
-    sh "/usr/local/bin/xbuild JenkinsTest.Android.csproj /p:Configuration=Release /t:SignAndroidPackage"
+    sh "/usr/local/bin/xbuild Droid/JenkinsTest.Droid.csproj /p:Configuration=Release /t:SignAndroidPackage"
 }
